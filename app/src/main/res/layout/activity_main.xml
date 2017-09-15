@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.deemons.dcrash.MainActivity">
+
+    <Button
+        android:onClick="button0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="start"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="5dp"/>
+   <Button
+        android:onClick="button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="主线程 NullPointException"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="5dp"/>
+
+    <Button
+        android:onClick="button2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="主线程 IllegalStateException"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="77dp"/>
+
+
+    <Button
+        android:onClick="button3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="子线程 NullPointException"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="5dp"/>
+
+    <Button
+        android:onClick="button4"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="子线程 IllegalStateException"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="77dp"/>
+
+
+    <Button
+        android:onClick="button5"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="stop"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="77dp"/>
+
+
+
+</LinearLayout>
