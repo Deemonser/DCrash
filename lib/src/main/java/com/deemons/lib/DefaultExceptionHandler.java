@@ -15,7 +15,5 @@ public class DefaultExceptionHandler implements ExceptionHandler {
     @Override
     public void handlerException(Thread thread, Throwable throwable) {
         Log.e("DefaultExceptionHandler", "Thread:" + thread.getName(),throwable);
-//        throwable.printStackTrace();
-
     }
 }
