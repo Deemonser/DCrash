@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.deemons.lib.DCrash;
+import com.deemons.lib.ExceptionHandler;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void button0(View view) {
-        DCrash.start();
+        DCrash.start(new ExceptionHandler() {
+            @Override
+            public void handlerException(Thread thread, Throwable throwable) {
+
+            }
+        });
     }
 
     public void button1(View view) {
