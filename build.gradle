@@ -29,7 +29,7 @@ task clean(type: Delete) {
 //添加下面的配置以便在 module 中引用
 ext {
     bintrayRepo = 'maven' //仓库名
-    publishedGroupId = 'com.deemons.dcrash' //引用时 第一部分
+    publishedGroupId = 'com.deemons.crash' //引用时 第一部分
     libraryDescription = 'never crash for android app'//描述
     siteUrl = 'https://github.com/Deemonser/DCrash'//项目地址
     gitUrl = 'https://github.com/Deemonser/DCrash.git'//gitUrl

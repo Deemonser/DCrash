@@ -6,9 +6,8 @@ package com.deemons.lib;
  * 包名       com.deemons.lib
  * 描述       此异常专用于退出 DCrash
  */
-
-public class QuitCrash extends RuntimeException {
-    public QuitCrash(String message) {
+class QuitCrash extends RuntimeException {
+    QuitCrash(String message) {
         super(message);
     }
 }

@@ -27,7 +27,7 @@ dependencies {
 //        exclude group: 'com.android.support', module: 'support-annotations'
 //    })
 //    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
+//    testCompile 'junit:junit:4.12'
 }
 
 
@@ -35,20 +35,30 @@ dependencies {
 //for upload
 ext {
     publishedGroupId = rootProject.publishedGroupId //引用时的第一部分
-    artifact = 'dcrash'//引用时的第二部分
+    artifact = 'crash'//引用时的第二部分
     libraryVersion = '1.0.0'//引用时的第三部分
     libraryName = 'lib'//本module名称
     bintrayName = 'DCrash'//Jcenter 上显示的项目名
+
+
     bintrayRepo = rootProject.bintrayRepo
     libraryDescription = rootProject.libraryDescription
+
+
+
     siteUrl =rootProject.siteUrl
     gitUrl = rootProject.gitUrl
+
     developerId = rootProject.developerId
     developerName =rootProject.developerName
     developerEmail = rootProject.developerEmail
+
     licenseName = rootProject.licenseName
     licenseUrl = rootProject.licenseUrl
     allLicenses = rootProject.allLicenses
 }
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
+//  ./gradlew install
+//  ./gradlew bintrayUpload
